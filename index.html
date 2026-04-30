@@ -729,19 +729,23 @@ body::before {
 <script>
 // ── DATA ─────────────────────────────────
 const DEFAULT_PRODUCTS = [
-  { id:1,  name:"Retatrutide",   mg:"40 mg",   price:150, stock:7,  status:"low",    available:true },
+  { id:1,  name:"Retatrutide",   mg:"40 mg",   price:150, stock:5,  status:"low",    available:true },
   { id:2,  name:"Selank",        mg:"10 mg",   price:70,  stock:8,  status:"medium", available:true },
-  { id:3,  name:"GHK-Cu",        mg:"100 mg",  price:40,  stock:7,  status:"low",    available:true },
-  { id:4,  name:"Mots-C",        mg:"20 mg",   price:120, stock:9,  status:"medium", available:true },
+  { id:3,  name:"GHK-Cu",        mg:"100 mg",  price:40,  stock:6,  status:"low",    available:true },
+  { id:4,  name:"Mots-C",        mg:"20 mg",   price:120, stock:7,  status:"medium", available:true },
   { id:5,  name:"PT-141",        mg:"10 mg",   price:75,  stock:10, status:"medium", available:true },
-  { id:6,  name:"NAD+",          mg:"1000 mg", price:90,  stock:10, status:"medium", available:true },
-  { id:7,  name:"Semax",         mg:"10 mg",   price:65,  stock:10, status:"medium", available:true },
+  { id:6,  name:"NAD+",          mg:"1000 mg", price:90,  stock:9, status:"medium", available:true },
+  { id:7,  name:"Semax",         mg:"10 mg",   price:65,  stock:9, status:"medium", available:true },
   { id:8,  name:"MT-1",          mg:"5 mg",    price:60,  stock:10, status:"medium", available:true },
-  { id:9,  name:"DSIP",          mg:"5 mg",    price:50,  stock:10, status:"medium", available:true },
+  { id:9,  name:"DSIP",          mg:"5 mg",    price:50,  stock:19, status:"medium", available:true },
   { id:10, name:"BPC-157",       mg:"10 mg",   price:55,  stock:10, status:"medium", available:true },
   { id:11, name:"Kisspeptin-10", mg:"5 mg",    price:50,  stock:10, status:"medium", available:true },
-  { id:12, name:"Cerebrolysin",  mg:"60 mg",   price:80,  stock:10, status:"medium", available:true },
-  { id:13, name:"Bac Water",     mg:"100 ml",  price:10,  stock:18, status:"high",   available:true },
+  { id:12, name:"CJC 1295 (no DAC)",  mg:"10 mg",   price:80,  stock:0, status:"medium", available:true },
+  { id:13, name:"Ipamorelin",  mg:"10 mg",   price:50,  stock:0, status:"low", available:true },
+  { id:14, name:"Tesamorelin",  mg:"10 mg",   price:110,  stock:0, status:"low", available:true },
+  { id:15, name:"MT2",  mg:"10 mg",   price:45,  stock:0, status:"low", available:true },
+  { id:16, name:"Cerebrolysin",  mg:"60 mg",   price:80,  stock:10, status:"medium", available:true },
+  { id:17, name:"Bac Water",     mg:"100 ml",  price:10,  stock:14, status:"high",   available:true },
 ];
 
 const saved = localStorage.getItem("pd_products");
